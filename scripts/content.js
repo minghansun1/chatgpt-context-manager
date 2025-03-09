@@ -2,8 +2,6 @@ const article = document.querySelector("article");
 
 // `document.querySelector` may return null if the selector doesn't match anything.
 if (article) {
-  console.log("This is a content script!");
-  console.log(article);
   const text = article.textContent;
   const wordMatchRegExp = /[^\s]+/g; // Regular expression
   const words = text.matchAll(wordMatchRegExp);
