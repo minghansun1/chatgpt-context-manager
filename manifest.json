@@ -4,17 +4,18 @@
     "version": "1.0",
     "manifest_version": 3,
     "action": {
-      "default_popup": "hello.html",
-      "default_icon": "hello_extensions.png"
+        "default_popup": "hello.html",
+        "default_icon": "hello_extensions.png"
     },
     "content_scripts": [
         {
-        "js": ["scripts/content.js"],
-        "matches": [
-            "https://developer.chrome.com/docs/extensions/*",
-            "https://developer.chrome.com/docs/webstore/*",
-            "https://chatgpt.com/*"
-        ]
+            "js": ["scripts/content.js"],
+            "matches": ["https://chat.openai.com/*", "https://chatgpt.com/*"],
+            "run_at": "document_start"
         }
+    ],
+    "host_permissions": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*"
     ]
-  }
+}
