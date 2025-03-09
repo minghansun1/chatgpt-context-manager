@@ -1,6 +1,6 @@
 {
-    "name": "Hello Extensions",
-    "description": "Base Level Extension",
+    "name": "ChatGPT Context Manager",
+    "description": "This extension helps you manage your ChatGPT context.",
     "version": "1.0",
     "manifest_version": 3,
     "action": {
